@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>Las fases de la luna</title>
+    <style>
+        body {
+            background-color: yellow;
+            font-family: 'Papyrus', sans-serif;
+            color: blue;
+            font-size: 10px;
+            display: flex;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .table-container {
+            margin-right: 20px;
+        }
+        table {
+            width: 70%; 
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th[colspan="2"] {
+            background-color: lightgray;
+        }
+        .small-image {
+            max-width: 160px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 class="title">Las fases de la luna</h1>
+        <p>Según la disposición de la Luna, la Tierra y el Sol, la cara visible de la luna se ve iluminada una mayor o menor porción.</p>
+        <img src="fasesluna.jpg" alt="Fases de la luna" class="small-image">
+
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th colspan="2">Fases de la luna</th>
+                </tr>
+                <tr>
+                    <td>Luna nueva</td>
+                    <td>Cuarto creciente</td>
+                </tr>
+                <tr>
+                    <td>Luna llena</td>
+                    <td>Cuarto menguante</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>Video de las fases de la Luna:</p>
+        <video width="320" height="240" controls>
+            <source src="la luna.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+    </script></body>
+</html>
