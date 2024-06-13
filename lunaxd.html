@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>Cráteres de la Luna</title>
+    <style>
+        body {
+            font-family: 'Papyrus', sans-serif;
+            font-size: 10px;
+            color: blue;
+            text-align: right;
+        }
+        h1 {
+            font-family: 'Papyrus', sans-serif;
+            color: blue;
+            font-size: 10px;
+            position: relative;
+            display: inline-block;
+        }
+        h1::after {
+            content: '';
+            display: block;
+            width: calc(120% - 20px);
+            height: 4px;
+            background-color: rgba(0, 128, 0, 0.4);
+            margin-top: 4px; 
+            position: absolute;
+            top: 100%; 
+            left: 0; 
+        }
+        p {
+            font-size: 10px;
+            color: blue;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            text-align: right;
+            margin: 0;
+            counter-reset: list-counter;
+        }
+        li {
+            font-size: 10px;
+            color: blue;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            counter-increment: list-counter;
+        }
+        li:before {
+            content: counter(list-counter) ". ";
+            position: absolute;
+            left: -20px;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .paragraph-line {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Los cráteres de la Luna</h1>
+    <p>
+        <span class="paragraph-line">La luna es un mundo lleno de montañas,</span> 
+        <span class="paragraph-line">cráteres y otras formaciones.</span>
+        <span class="paragraph-line">Los cráteres lunares se formaron</span> 
+        <span class="paragraph-line">por el impacto de meteoritos.</span>
+        <span class="paragraph-line">Algunos nombres de los cráteres lunares son:</span>
+    </p>
+    <ul>
+        <li>1.Copérnico</li>
+        <li>2.Kepler</li>
+        <li>3.Pitágoras</li>
+        <li>4.Einstein</li>
+        <li>5.Erro</li>
+        <li>6.Pascal</li>
+    </ul>
+    <a href="https://astronomiaparatodos.com/la-luna/">Hipervínculo Astro</a>
+</script></body>
+</html>
